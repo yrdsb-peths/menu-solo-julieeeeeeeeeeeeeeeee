@@ -7,7 +7,10 @@ public class InstructionScreen extends World
         super(600, 400, 1); 
         
         addObject(new Button(this::goMenuScreen), 150, 340);
-        addObject(new Button(this::goAvatar), 450, 340);
+        addObject(new Button(this::goInstruction2), 450, 340);
+        
+        Label instruction1 = new Label("Instructions 1", 60);
+        addObject(instruction1, 300, 200);
     }
     
     public void goMenuScreen()
@@ -15,8 +18,8 @@ public class InstructionScreen extends World
         Greenfoot.setWorld(new MenuScreen());
     }
     
-    public void goAvatar()
+    public void goInstruction2()
     {
-        Greenfoot.setWorld(new AvatarScreen());
+        Greenfoot.setWorld(new InstructionScreen2());
     }
 }
