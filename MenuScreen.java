@@ -15,6 +15,27 @@ public class MenuScreen extends World {
     
     public void goAvatar()
     {
-        
+        int count = 0;
+        Faces a = new Happyface();
+        Faces b = new Annoyedface();
+        Faces c = new Smilingface(); 
+        if(Greenfoot.mouseClicked(this))
+        {
+            if(count == 0)
+            {
+                addObject(a, 300, 100);
+                count++;
+            }
+            if(count == 1)
+            {
+                addObject(b, 300, 100);
+                count++; 
+            }
+            if(count == 2)
+            {
+                addObject(c, 300, 100);
+                count++;
+            }
+        }
     }
 }
