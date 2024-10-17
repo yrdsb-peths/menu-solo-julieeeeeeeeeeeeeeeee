@@ -6,7 +6,7 @@ public class InstructionScreen extends World
     {    
         super(600, 400, 1); 
         
-        addObject(new Button(this::goMenuScreen), 150, 340);
+        addObject(new Button(this::goMenuScreen), 150, 340);        
         addObject(new Button(this::goInstruction2), 450, 340);
         
         Label instruction1 = new Label("Instructions 1", 60);

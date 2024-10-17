@@ -1,7 +1,7 @@
 public class Queue<Item>
 {
-    private Node first;
-    private Node last;
+    public Node first;
+    public Node last;
     
     private class Node
     {
